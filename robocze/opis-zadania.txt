@@ -1,0 +1,28 @@
+Pliki (dane):
+
+	attrition.csv - w tym pliku znajduje się klasa (etykieta). Dodatkowo, znajduje się id pracownika (EmployeeNumber) - tą kolumnę należy wykorzystać do połączenia kolumn w poszczegónych plikach 
+
+	df1.csv, df2.csv – pliki z cechami i id pracownika (EmployeeNumber).
+	
+	test_target.csv – dane testowe.
+
+	Należy połączyć dane z plików df1 i df2 w jeden DataFrame (oba pliki zawierają dane tych samych pracowników, ale inne cechy - chcemy wykorzystać wszystkie).
+	Ponieważ mamy podział na train/test ( na podstawie pliku test_target), należy po połączeniu cech, podzielić je według tego podziału - dzięki temu będziecie mogli porównać swoje wyniki.
+	
+Proces:
+
+	-Przeprowadzić EDA (Exploratory Data Analysis)
+		-np. Czy występują outiery, puste wartości
+		-Sprawdzić, czy zbiór jest zrównoważony
+		-Wizualizuj dane! Przykład: https://towardsdatascience.com/how-to-perform-exploratory-data-analysis-with-seaborn-97e3413e841d
+		-Sprawdzić korelacje cech
+		-Dokonać analizy wyników
+
+
+	-Przeprowadzić Feature Engineering
+		-W tym categorical encoding (przykład: https://medium.com/analytics-vidhya/categorical-encoding-with-pandas-get-dummies-d6f1ae6a3e06)
+	-Dokonać treningu modelu
+		-Pamiętaj, aby za każdym razem pokazywać miary jakości (Accuracy, Precision, Recall, F1-Score...)
+
+		-Analiza wyników!
+		-Można pokusić się o analize modelu I jego wag (np. Ważność cech, przykład: https://scikit-learn.org/stable/auto_examples/ensemble/plot_forest_importances.html)
